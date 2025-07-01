@@ -1,11 +1,38 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "../styles/global.css";
 ---
 
 <Layout>
-	<Welcome />
+  <div
+    class="w-full flex flex-col items-center justify-center bg-gradient-to-t bg-[#05090C] from-[#05090C] to-[#E41476] min-h-screen text-white gap-20"
+  >
+    <div class="w-1/2 lg:w-48">
+      <img src="/mto-logo.png" alt="mto-logo.png" />
+    </div>
+    <h1 class="font-mono text-xl font-bold select-none text-center">
+      Reforzamiento de taller de programación
+    </h1>
+    <div class="flex gap-20 items-center justify-center flex-wrap">
+      <a
+        href="https://cdn.mtocommunity.com/reforzamiento-taller-de-programacion.zip"
+        target="_blank"
+        class="bg-[#101B37] p-10 rounded-lg hover:scale-105 cursor-pointer transition-all duration-300 select-none"
+        >Material</a
+      >
+      <a
+        href="https://utpvirtual.zoom.us/j/83641291765"
+        target="_blank"
+        class="bg-[#101B37] p-10 rounded-lg hover:scale-105 cursor-pointer transition-all duration-300 select-none"
+        >Zoom</a
+      >
+      <a
+        href="https://chat.whatsapp.com/C7xjCLGwQRI6EsizNXGpvo?mode=ac_t"
+        target="_blank"
+        class="bg-[#101B37] p-10 rounded-lg hover:scale-105 cursor-pointer transition-all duration-300 select-none"
+        >Whatsapp</a
+      >
+    </div>
+  </div>
 </Layout>
